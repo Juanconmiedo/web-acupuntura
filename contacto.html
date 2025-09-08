@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Citas | Centro Terapéutico</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<div class="notice" role="note" aria-label="Aviso importante">“SOLO SE ATIENDE CON INDICACIONES DE RECETA MÉDICA”</div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Ir a inicio">WEB ACUPUNTURA</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav" class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="acupuntura.html">Acupuntura</a>
+    <a href="ceragem.html">Camilla Ceragem</a>
+    <a href="ondas.html">Ondas EM</a>
+    <a href="contacto.html">Citas</a>
+  </nav>
+</header>
+<main class="container">
+
+  <section class="service">
+    <h1>Solicitar Cita</h1>
+    <p>Complete el formulario para coordinar disponibilidad. También puede escribir por <a href="https://wa.me/xxxx?text=Hola%2C%20quisiera%20una%20cita" target="_blank" rel="noopener">WhatsApp</a>.</p>
+
+    <form class="form" id="bookingForm" action="mailto:yyy" method="post" enctype="text/plain">
+      <div class="grid2">
+        <label>Nombre y Apellidos
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+        </label>
+        <label>Teléfono
+          <input type="tel" name="telefono" placeholder="xxxx" required />
+        </label>
+      </div>
+      <div class="grid2">
+        <label>Correo
+          <input type="email" name="correo" placeholder="yyy" required />
+        </label>
+        <label>Servicio
+          <select name="servicio" id="servicio">
+            <option value="Acupuntura">Acupuntura</option>
+            <option value="Ceragem">Camilla Ceragem</option>
+            <option value="Ondas EM">Ondas Electromagnéticas</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid2">
+        <label>Fecha preferida
+          <input type="date" name="fecha" required />
+        </label>
+        <label>Hora preferida
+          <input type="time" name="hora" required />
+        </label>
+      </div>
+      <label>Comentarios
+        <textarea name="comentarios" rows="5" placeholder="Escribe detalles relevantes (p. ej. indicaciones médicas)"></textarea>
+      </label>
+      <div class="actions">
+        <button type="submit" class="btn primary">Enviar solicitud</button>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+      </div>
+    </form>
+
+    <div class="info">
+      <p><strong>Horario:</strong> Lunes a Sábado, 9:00–19:00.</p>
+      <p><strong>Dirección:</strong> (complete aquí su dirección).</p>
+      <p><strong>Contacto directo:</strong> Tel: xxxx · Email: yyy</p>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div>
+    <strong>Tel:</strong> xxxx &nbsp;|&nbsp; <strong>Email:</strong> yyy
+  </div>
+  <div class="social">
+    <a class="btn" href="https://wa.me/xxxx?text=Hola%2C%20quisiera%20una%20cita" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="contacto.html">Solicitar Cita</a>
+  </div>
+  <p class="small">© 2025 Centro Terapéutico. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
